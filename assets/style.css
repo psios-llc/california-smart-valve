@@ -961,15 +961,21 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   filter: grayscale(1) contrast(1.05) brightness(1.05);
   transform: scale(1.04);
 }
-/* Derek — photo is a tall portrait; show it all, no top/bottom crop */
-.leader--featured .leader__photo img {
-  object-fit: contain;
-  object-position: center;
-  transform: none;
-  padding: 4% 0;
+/* Derek — photo is a 2:3 portrait; shrink it to fit inside the square,
+   centered, no top/bottom crop. Navy stage fills the surrounding space. */
+.leader.leader--featured .leader__photo img {
+  width: 72% !important;
+  height: auto !important;
+  max-height: 88%;
+  object-fit: contain !important;
+  object-position: center !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
 }
-.leader--featured:hover .leader__photo img {
-  transform: scale(1.03);
+.leader.leader--featured:hover .leader__photo img {
+  transform: translate(-50%, -50%) scale(1.03) !important;
 }
 .leader__initials {
   position: absolute;
