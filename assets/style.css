@@ -977,32 +977,30 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
 .leader.leader--featured:hover .leader__photo img {
   transform: translate(-50%, -50%) scale(1.03) !important;
 }
-.leader__initials {
-  position: absolute;
-  left: 12px;
-  bottom: 8px;
-  font-family: var(--display);
-  font-weight: 900;
-  font-size: 1.6rem;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--orange);
-  z-index: 3;
-  mix-blend-mode: screen;
-  text-shadow: 0 2px 8px rgba(10,22,40,.6);
-  opacity: 0.9;
-}
 .leader__photo--accent {
   border-color: var(--orange);
   box-shadow: 0 0 0 1px var(--orange) inset;
+  background-image: url('img/derek-beda.jpg');
+  background-size: cover;
+  background-position: center;
 }
+/* Blurred fill of Derek's own photo so the side gaps read as
+   a full-bleed portrait instead of letterboxing. */
 .leader__photo--accent::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 50%, rgba(255,107,26,.15) 100%);
-  z-index: 1;
+  background-image: inherit;
+  background-size: 140%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(18px) grayscale(1) brightness(.55);
+  transform: scale(1.1);
+  z-index: 0;
   pointer-events: none;
+}
+.leader__photo--accent img {
+  z-index: 2;
 }
 .leader__name {
   font-family: var(--display);
