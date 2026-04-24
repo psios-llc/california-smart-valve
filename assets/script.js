@@ -108,6 +108,32 @@
     });
   }
 
+  // ── product thumbnail swap ──────────────────────
+  function wireDeviceThumbs() {
+    const hero  = document.getElementById('deviceHero');
+    const label = document.querySelector('[data-device-label]');
+    const thumbs = document.querySelectorAll('.device__thumb');
+    if (!hero || !thumbs.length) return;
+    thumbs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.dataset.src;
+        const lab = btn.dataset.label;
+        if (!src || hero.getAttribute('src') === src) return;
+        hero.style.animation = 'none';
+        void hero.offsetWidth;
+        hero.style.animation = '';
+        hero.setAttribute('src', src);
+        hero.setAttribute('alt', `California Smart Valve — ${lab.toLowerCase()} view`);
+        if (label) label.textContent = lab;
+        thumbs.forEach(t => {
+          const active = t === btn;
+          t.classList.toggle('is-active', active);
+          t.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+      });
+    });
+  }
+
   // ── boot ────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', () => {
     buildSeismoPath();
@@ -115,6 +141,7 @@
     driftMagnitude();
     setYear();
     wireNav();
+    wireDeviceThumbs();
     setInterval(tickClock, 1000);
     setInterval(driftMagnitude, 2400);
   });

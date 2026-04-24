@@ -217,39 +217,29 @@
   </header>
 
   <div class="device">
-    <div class="device__art" aria-hidden="true">
-      <svg viewBox="0 0 360 360">
-        <defs>
-          <radialGradient id="valveBg" cx="50%" cy="50%" r="55%">
-            <stop offset="0%" stop-color="#1A2942"/>
-            <stop offset="100%" stop-color="#0A1628"/>
-          </radialGradient>
-        </defs>
-        <circle cx="180" cy="180" r="170" fill="url(#valveBg)" stroke="#FF6B1A" stroke-width="1"/>
-        <circle cx="180" cy="180" r="150" fill="none" stroke="#FF6B1A" stroke-width="0.5" stroke-dasharray="2 4" opacity="0.5"/>
-        <!-- valve body -->
-        <rect x="80" y="180" width="200" height="34" rx="2" fill="#F5F1E8" opacity="0.9"/>
-        <rect x="60" y="186" width="20" height="22" fill="#F5F1E8" opacity="0.7"/>
-        <rect x="280" y="186" width="20" height="22" fill="#F5F1E8" opacity="0.7"/>
-        <!-- pipes left/right -->
-        <rect x="20" y="190" width="40" height="14" fill="#3A4A5E"/>
-        <rect x="300" y="190" width="40" height="14" fill="#3A4A5E"/>
-        <!-- top dome (sensor housing) -->
-        <ellipse cx="180" cy="180" rx="56" ry="44" fill="#FF6B1A"/>
-        <ellipse cx="180" cy="178" rx="56" ry="40" fill="#FF6B1A"/>
-        <ellipse cx="180" cy="170" rx="40" ry="28" fill="none" stroke="#0A1628" stroke-width="1.5" opacity="0.4"/>
-        <circle cx="180" cy="160" r="10" fill="#0A1628"/>
-        <circle cx="180" cy="160" r="4" fill="#FF6B1A"/>
-        <!-- bolts -->
-        <circle cx="100" cy="197" r="2.5" fill="#0A1628"/>
-        <circle cx="100" cy="207" r="2.5" fill="#0A1628"/>
-        <circle cx="260" cy="197" r="2.5" fill="#0A1628"/>
-        <circle cx="260" cy="207" r="2.5" fill="#0A1628"/>
-        <!-- callout pulse -->
-        <g class="device__pulse">
-          <circle cx="180" cy="160" r="22" fill="none" stroke="#7FFFD4" stroke-width="1.2"/>
-        </g>
-      </svg>
+    <div class="device__art">
+      <div class="device__stage">
+        <span class="device__corner device__corner--tl"></span>
+        <span class="device__corner device__corner--tr"></span>
+        <span class="device__corner device__corner--bl"></span>
+        <span class="device__corner device__corner--br"></span>
+        <span class="device__label" data-device-label>Exterior</span>
+        <img id="deviceHero" src="assets/img/smart-valve-orange.png" alt="California Smart Valve — exterior view with orange cap">
+      </div>
+      <div class="device__thumbs" role="tablist" aria-label="Product views">
+        <button class="device__thumb is-active" role="tab" aria-selected="true" data-src="assets/img/smart-valve-orange.png" data-label="Exterior">
+          <img src="assets/img/smart-valve-orange.png" alt="">
+          <span>Exterior</span>
+        </button>
+        <button class="device__thumb" role="tab" aria-selected="false" data-src="assets/img/smart-valve-cutaway.png" data-label="Cutaway">
+          <img src="assets/img/smart-valve-cutaway.png" alt="">
+          <span>Cutaway</span>
+        </button>
+        <button class="device__thumb" role="tab" aria-selected="false" data-src="assets/img/smart-valve-installed.png" data-label="Installed">
+          <img src="assets/img/smart-valve-installed.png" alt="">
+          <span>Installed</span>
+        </button>
+      </div>
     </div>
 
     <div class="device__copy">
@@ -299,7 +289,10 @@
 
   <div class="leaders">
     <article class="leader">
-      <div class="leader__mono"><span>JR</span></div>
+      <div class="leader__photo">
+        <img src="assets/img/james-roberts-real.png" alt="Portrait of James Roberts" loading="lazy">
+        <span class="leader__initials" aria-hidden="true">JR</span>
+      </div>
       <h4 class="leader__name">James Roberts</h4>
       <p class="leader__role">President &amp; CEO</p>
       <ul class="leader__meta">
@@ -308,7 +301,10 @@
       </ul>
     </article>
     <article class="leader">
-      <div class="leader__mono"><span>KT</span></div>
+      <div class="leader__photo">
+        <img src="assets/img/ken-tarlow-real.png" alt="Portrait of Ken Tarlow" loading="lazy">
+        <span class="leader__initials" aria-hidden="true">KT</span>
+      </div>
       <h4 class="leader__name">Ken Tarlow</h4>
       <p class="leader__role">Design Engineer</p>
       <ul class="leader__meta">
@@ -317,7 +313,10 @@
       </ul>
     </article>
     <article class="leader">
-      <div class="leader__mono"><span>MG</span></div>
+      <div class="leader__photo">
+        <img src="assets/img/matt-gross-real.png" alt="Portrait of Matt Gross" loading="lazy">
+        <span class="leader__initials" aria-hidden="true">MG</span>
+      </div>
       <h4 class="leader__name">Matt Gross</h4>
       <p class="leader__role">Industrial &amp; Visual Designer</p>
       <ul class="leader__meta">
@@ -326,7 +325,10 @@
       </ul>
     </article>
     <article class="leader leader--featured">
-      <div class="leader__mono leader__mono--accent"><span>DB</span></div>
+      <div class="leader__photo leader__photo--accent">
+        <img src="assets/img/derek-beda.jpg" alt="Portrait of Derek Beda" loading="lazy">
+        <span class="leader__initials" aria-hidden="true">DB</span>
+      </div>
       <h4 class="leader__name">Derek Beda</h4>
       <p class="leader__role">CTO</p>
       <ul class="leader__meta">
