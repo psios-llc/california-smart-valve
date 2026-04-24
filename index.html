@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0A1628">
+  <title>California Smart Valve — Earthquake & Fire Safety</title>
+  <meta name="description" content="Dual-protection gas safety valve. Earthquake seismic shutoff and fire emergency response in a single solid-state device. California Smart Valve Inc.">
+  <meta property="og:title" content="California Smart Valve — Earthquake & Fire Safety">
+  <meta property="og:description" content="One solid-state device. Two emergencies. Earthquake + fire gas shutoff for California homes.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Fraunces:opsz,wght@9..144,300..700&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ────────────── STATION READOUT BAR ────────────── -->
+<header class="station" role="banner">
+  <div class="station__inner">
+    <span class="station__badge"><span class="station__pulse" aria-hidden="true"></span> LIVE</span>
+    <span class="station__readout">
+      <span class="station__seg">STATION <em>CSV-001</em></span>
+      <span class="station__sep">·</span>
+      <span class="station__seg">36.94°N 121.65°W</span>
+      <span class="station__sep">·</span>
+      <span class="station__seg">MORGAN HILL · CA</span>
+      <span class="station__sep">·</span>
+      <span class="station__seg">MAG <em data-mag>0.00</em></span>
+    </span>
+    <span class="station__time" data-clock>—— UTC</span>
+  </div>
+</header>
+
+<!-- ────────────── NAV ────────────── -->
+<nav class="nav" aria-label="Primary">
+  <a class="nav__brand" href="#top">
+    <svg class="nav__logo" viewBox="0 0 64 64" aria-hidden="true">
+      <rect width="64" height="64" rx="10" fill="#0A1628"/>
+      <path d="M10 34 L18 34 L22 22 L28 46 L34 14 L40 50 L46 30 L54 30" fill="none" stroke="#FF6B1A" stroke-width="3.2" stroke-linecap="square"/>
+      <circle cx="54" cy="30" r="2.6" fill="#FF6B1A"/>
+    </svg>
+    <span class="nav__brand-text">California Smart Valve <em>Inc.</em></span>
+  </a>
+  <button class="nav__toggle" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links">
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#dual">Dual Threat</a></li>
+    <li><a href="#device">The Device</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a class="nav__cta" href="#start">Start Here →</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+
+<!-- ────────────── HERO ────────────── -->
+<section class="hero">
+  <div class="hero__noise" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="hero__eyebrow"><span class="tag">§00</span> Dual-Protection Gas Safety Valve · Patented · Made in California</p>
+
+    <h1 class="hero__title">
+      <span class="hero__line">Protecting</span>
+      <span class="hero__line">Homes from</span>
+      <span class="hero__line hero__line--quake">
+        Earthquakes<span class="hero__mark hero__mark--quake" aria-hidden="true"></span>
+      </span>
+      <span class="hero__line hero__line--amp">&amp;</span>
+      <span class="hero__line hero__line--fire">
+        Fires<span class="hero__mark hero__mark--fire" aria-hidden="true"></span><span class="hero__period">.</span>
+      </span>
+    </h1>
+
+    <p class="hero__lede">
+      One solid-state device. Two emergencies. California Smart Valve detects seismic activity
+      <em>and</em> fire — and shuts your gas off automatically, before the damage starts.
+    </p>
+
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#device"><span>See the Device</span><span class="btn__arrow">→</span></a>
+      <a class="btn btn--ghost" href="#dual">How it works</a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat"><span class="stat__num">$235</span><span class="stat__label">Per Unit</span></div>
+      <div class="stat"><span class="stat__num">130<em>+</em></span><span class="stat__label">Yrs Combined Experience</span></div>
+      <div class="stat"><span class="stat__num">2-in-1</span><span class="stat__label">Quake + Fire Shutoff</span></div>
+    </div>
+  </div>
+
+  <!-- seismograph trace -->
+  <div class="seismo" aria-hidden="true">
+    <div class="seismo__grid"></div>
+    <svg class="seismo__svg" viewBox="0 0 3200 240" preserveAspectRatio="none">
+      <path id="seismoPath" d="M 0 120 L 3200 120" fill="none" stroke="#FF6B1A" stroke-width="2" vector-effect="non-scaling-stroke"/>
+    </svg>
+    <div class="seismo__scan"></div>
+    <div class="seismo__axis">
+      <span>−6</span><span>−4</span><span>−2</span><span>0</span><span>+2</span><span>+4</span><span>+6</span>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────── §01 MISSION ────────────── -->
+<section class="section section--mission" id="mission">
+  <header class="section__head">
+    <span class="section__num">§01</span>
+    <h2 class="section__title">The mission, in three lines.</h2>
+    <p class="section__kicker">Built around one promise: when something goes wrong, the gas goes off.</p>
+  </header>
+
+  <div class="cards-3">
+    <article class="card-mission">
+      <span class="card-mission__num">01</span>
+      <h3 class="card-mission__title">Safety<br>First.</h3>
+      <p class="card-mission__body">Automatically shuts off gas during earthquakes and fires — preventing catastrophic damage and saving lives.</p>
+      <span class="card-mission__bar" data-bar="safety"></span>
+    </article>
+    <article class="card-mission">
+      <span class="card-mission__num">02</span>
+      <h3 class="card-mission__title">Solid-State<br>Tech.</h3>
+      <p class="card-mission__body">No moving sensor parts to wear out. Solid-state electronics deliver the reliability you need when you need it most.</p>
+      <span class="card-mission__bar" data-bar="tech"></span>
+    </article>
+    <article class="card-mission">
+      <span class="card-mission__num">03</span>
+      <h3 class="card-mission__title">Easy<br>Install.</h3>
+      <p class="card-mission__body">Engineered for clean integration into existing gas line infrastructure by professional plumbers and contractors.</p>
+      <span class="card-mission__bar" data-bar="install"></span>
+    </article>
+  </div>
+</section>
+
+<!-- ────────────── §02 DUAL THREAT ────────────── -->
+<section class="section section--dual" id="dual">
+  <header class="section__head section__head--dark">
+    <span class="section__num">§02</span>
+    <h2 class="section__title">Two emergencies.<br>One valve.</h2>
+    <p class="section__kicker">Most valves do one job. California Smart Valve handles both — in a single device, on a single install.</p>
+  </header>
+
+  <div class="dual">
+    <article class="dual__panel dual__panel--quake">
+      <div class="dual__bg dual__bg--quake" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="none">
+          <g class="quake-bars">
+            <rect x="20" y="80" width="6" height="40"/>
+            <rect x="40" y="60" width="6" height="80"/>
+            <rect x="60" y="40" width="6" height="120"/>
+            <rect x="80" y="70" width="6" height="60"/>
+            <rect x="100" y="20" width="6" height="160"/>
+            <rect x="120" y="50" width="6" height="100"/>
+            <rect x="140" y="80" width="6" height="40"/>
+            <rect x="160" y="30" width="6" height="140"/>
+            <rect x="180" y="65" width="6" height="70"/>
+            <rect x="200" y="10" width="6" height="180"/>
+            <rect x="220" y="45" width="6" height="110"/>
+            <rect x="240" y="70" width="6" height="60"/>
+            <rect x="260" y="35" width="6" height="130"/>
+            <rect x="280" y="75" width="6" height="50"/>
+            <rect x="300" y="25" width="6" height="150"/>
+            <rect x="320" y="60" width="6" height="80"/>
+            <rect x="340" y="80" width="6" height="40"/>
+            <rect x="360" y="50" width="6" height="100"/>
+            <rect x="380" y="70" width="6" height="60"/>
+          </g>
+        </svg>
+      </div>
+      <span class="dual__tag">Threat 01 — Seismic</span>
+      <h3 class="dual__title">When the ground moves,<br>the gas <em>stops</em>.</h3>
+      <p class="dual__body">Internal seismic sensors trigger an immediate shutoff during earthquakes — closing the gas line before a ruptured pipe can find a spark.</p>
+      <ul class="dual__list">
+        <li>Solid-state seismic detection</li>
+        <li>Instant mechanical shutoff</li>
+        <li>Manual reset after the all-clear</li>
+      </ul>
+    </article>
+
+    <article class="dual__panel dual__panel--fire">
+      <div class="dual__bg dual__bg--fire" aria-hidden="true">
+        <svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMax meet">
+          <g class="flame">
+            <path class="flame__outer" d="M100 230 C 40 200, 30 140, 70 110 C 60 140, 80 150, 90 130 C 95 100, 80 70, 110 40 C 105 80, 130 90, 130 130 C 145 110, 155 130, 150 160 C 165 150, 170 180, 160 210 C 150 225, 130 232, 100 230 Z"/>
+            <path class="flame__mid" d="M100 220 C 60 195, 60 150, 90 125 C 88 145, 100 150, 105 135 C 108 110, 100 90, 115 65 C 115 95, 130 105, 130 135 C 140 130, 145 150, 140 175 C 140 200, 125 220, 100 220 Z"/>
+            <path class="flame__core" d="M100 210 C 80 195, 80 165, 95 145 C 95 160, 105 162, 108 150 C 110 130, 105 115, 115 95 C 115 115, 125 125, 122 145 C 130 145, 132 165, 125 185 C 122 200, 112 210, 100 210 Z"/>
+          </g>
+        </svg>
+      </div>
+      <span class="dual__tag">Threat 02 — Fire</span>
+      <h3 class="dual__title">When the heat rises,<br>the gas <em>stops</em>.</h3>
+      <p class="dual__body">A fire-emergency response system shuts off gas supply when temperatures spike — cutting fuel from the fire before it reaches the line.</p>
+      <ul class="dual__list">
+        <li>Thermal trigger built in</li>
+        <li>Closed-loop electronic shutoff</li>
+        <li>No external power required</li>
+      </ul>
+    </article>
+  </div>
+
+  <p class="dual__footnote">
+    <span class="tag tag--orange">FIRST OF ITS KIND</span> First valve to combine seismic detection and fire response in a single, easy-to-install device.
+  </p>
+</section>
+
+<!-- ────────────── §03 THE DEVICE ────────────── -->
+<section class="section section--device" id="device">
+  <header class="section__head">
+    <span class="section__num">§03</span>
+    <h2 class="section__title">The device.</h2>
+    <p class="section__kicker">A solid-state, dual-protection gas safety valve. Engineered, patented, manufactured in California.</p>
+  </header>
+
+  <div class="device">
+    <div class="device__art" aria-hidden="true">
+      <svg viewBox="0 0 360 360">
+        <defs>
+          <radialGradient id="valveBg" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#1A2942"/>
+            <stop offset="100%" stop-color="#0A1628"/>
+          </radialGradient>
+        </defs>
+        <circle cx="180" cy="180" r="170" fill="url(#valveBg)" stroke="#FF6B1A" stroke-width="1"/>
+        <circle cx="180" cy="180" r="150" fill="none" stroke="#FF6B1A" stroke-width="0.5" stroke-dasharray="2 4" opacity="0.5"/>
+        <!-- valve body -->
+        <rect x="80" y="180" width="200" height="34" rx="2" fill="#F5F1E8" opacity="0.9"/>
+        <rect x="60" y="186" width="20" height="22" fill="#F5F1E8" opacity="0.7"/>
+        <rect x="280" y="186" width="20" height="22" fill="#F5F1E8" opacity="0.7"/>
+        <!-- pipes left/right -->
+        <rect x="20" y="190" width="40" height="14" fill="#3A4A5E"/>
+        <rect x="300" y="190" width="40" height="14" fill="#3A4A5E"/>
+        <!-- top dome (sensor housing) -->
+        <ellipse cx="180" cy="180" rx="56" ry="44" fill="#FF6B1A"/>
+        <ellipse cx="180" cy="178" rx="56" ry="40" fill="#FF6B1A"/>
+        <ellipse cx="180" cy="170" rx="40" ry="28" fill="none" stroke="#0A1628" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="180" cy="160" r="10" fill="#0A1628"/>
+        <circle cx="180" cy="160" r="4" fill="#FF6B1A"/>
+        <!-- bolts -->
+        <circle cx="100" cy="197" r="2.5" fill="#0A1628"/>
+        <circle cx="100" cy="207" r="2.5" fill="#0A1628"/>
+        <circle cx="260" cy="197" r="2.5" fill="#0A1628"/>
+        <circle cx="260" cy="207" r="2.5" fill="#0A1628"/>
+        <!-- callout pulse -->
+        <g class="device__pulse">
+          <circle cx="180" cy="160" r="22" fill="none" stroke="#7FFFD4" stroke-width="1.2"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="device__copy">
+      <ul class="device__features">
+        <li>
+          <span class="device__feature-num">F.01</span>
+          <h4>Fire Protection</h4>
+          <p>Automatically shuts off gas supply during fire emergencies.</p>
+        </li>
+        <li>
+          <span class="device__feature-num">F.02</span>
+          <h4>Earthquake Response</h4>
+          <p>Seismic sensors trigger immediate gas shutoff during earthquakes.</p>
+        </li>
+        <li>
+          <span class="device__feature-num">F.03</span>
+          <h4>Solid-State Technology</h4>
+          <p>Advanced electronics ensure reliable operation and longevity.</p>
+        </li>
+        <li>
+          <span class="device__feature-num">F.04</span>
+          <h4>Easy Installation</h4>
+          <p>Simple installation process for professional contractors.</p>
+        </li>
+      </ul>
+
+      <div class="price">
+        <div class="price__head"><span>Retail · Per Unit</span><span class="price__sku">SKU CSV-V1</span></div>
+        <div class="price__num"><span class="price__currency">$</span>235</div>
+        <p class="price__note">Professional installation recommended for optimal performance and warranty coverage.</p>
+        <a class="btn btn--primary btn--block" href="mailto:james@californiasmartvalve.com?subject=California%20Smart%20Valve%20%E2%80%94%20Purchase%20Inquiry">
+          <span>Email to Purchase</span><span class="btn__arrow">→</span>
+        </a>
+        <a class="price__phone" href="tel:+17072963600">☏ 707 · 296 · 3600</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────── §04 LEADERSHIP ────────────── -->
+<section class="section section--leadership" id="leadership">
+  <header class="section__head section__head--dark">
+    <span class="section__num">§04</span>
+    <h2 class="section__title">130+ years on the line.</h2>
+    <p class="section__kicker">Plumbing. Engineering. Industrial design. Software. The team behind the valve.</p>
+  </header>
+
+  <div class="leaders">
+    <article class="leader">
+      <div class="leader__mono"><span>JR</span></div>
+      <h4 class="leader__name">James Roberts</h4>
+      <p class="leader__role">President &amp; CEO</p>
+      <ul class="leader__meta">
+        <li><span>Yrs</span> 30</li>
+        <li><span>Focus</span> Plumbing &amp; Construction</li>
+      </ul>
+    </article>
+    <article class="leader">
+      <div class="leader__mono"><span>KT</span></div>
+      <h4 class="leader__name">Ken Tarlow</h4>
+      <p class="leader__role">Design Engineer</p>
+      <ul class="leader__meta">
+        <li><span>Yrs</span> 35</li>
+        <li><span>Focus</span> Patent Owner</li>
+      </ul>
+    </article>
+    <article class="leader">
+      <div class="leader__mono"><span>MG</span></div>
+      <h4 class="leader__name">Matt Gross</h4>
+      <p class="leader__role">Industrial &amp; Visual Designer</p>
+      <ul class="leader__meta">
+        <li><span>Yrs</span> —</li>
+        <li><span>Focus</span> Industrial · Visual</li>
+      </ul>
+    </article>
+    <article class="leader leader--featured">
+      <div class="leader__mono leader__mono--accent"><span>DB</span></div>
+      <h4 class="leader__name">Derek Beda</h4>
+      <p class="leader__role">CTO</p>
+      <ul class="leader__meta">
+        <li><span>Yrs</span> 30</li>
+        <li><span>Focus</span> Industry Technology</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ────────────── §05 SPEC SHEET ────────────── -->
+<section class="section section--spec">
+  <header class="section__head">
+    <span class="section__num">§05</span>
+    <h2 class="section__title">The competition,<br>side by side.</h2>
+    <p class="section__kicker">How California Smart Valve compares to key competitors in the seismic + fire shutoff space.</p>
+  </header>
+
+  <div class="spec">
+    <div class="spec__row spec__row--head">
+      <span>Feature</span>
+      <span class="spec__brand spec__brand--us">California Smart Valve</span>
+      <span class="spec__brand">Pacific Seismic</span>
+      <span class="spec__brand">The Little Firefighter</span>
+    </div>
+    <div class="spec__row">
+      <span>Earthquake Detection</span>
+      <span class="spec__cell spec__cell--us"><i class="mark mark--ok">✓</i></span>
+      <span class="spec__cell"><i class="mark mark--ok">✓</i></span>
+      <span class="spec__cell"><i class="mark mark--no">✗</i></span>
+    </div>
+    <div class="spec__row">
+      <span>Fire Detection</span>
+      <span class="spec__cell spec__cell--us"><i class="mark mark--ok">✓</i></span>
+      <span class="spec__cell"><i class="mark mark--no">✗</i></span>
+      <span class="spec__cell"><i class="mark mark--ok">✓</i></span>
+    </div>
+    <div class="spec__row">
+      <span>Solid State Technology</span>
+      <span class="spec__cell spec__cell--us"><i class="mark mark--ok">✓</i></span>
+      <span class="spec__cell"><i class="mark mark--no">✗</i></span>
+      <span class="spec__cell"><i class="mark mark--no">✗</i></span>
+    </div>
+    <div class="spec__row">
+      <span>Easy Installation</span>
+      <span class="spec__cell spec__cell--us"><i class="mark mark--ok">✓</i></span>
+      <span class="spec__cell"><i class="mark mark--warn">⚠</i></span>
+      <span class="spec__cell"><i class="mark mark--ok">✓</i></span>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────── §06 ABOUT ────────────── -->
+<section class="section section--about" id="about">
+  <header class="section__head">
+    <span class="section__num">§06</span>
+    <h2 class="section__title">About California Smart Valve Inc.</h2>
+    <p class="section__kicker">A California corporation dedicated to protecting homes and saving lives through innovative safety valve technology.</p>
+  </header>
+
+  <div class="about">
+    <div class="about__col">
+      <h3 class="about__h">Company Information</h3>
+      <dl class="about__dl">
+        <dt>Company</dt><dd>California Smart Valve Inc.</dd>
+        <dt>President &amp; CEO</dt><dd>James Roberts</dd>
+        <dt>Incorporation</dt><dd>California Corporation</dd>
+        <dt>Industry</dt><dd>Safety Equipment Manufacturing</dd>
+      </dl>
+    </div>
+    <div class="about__col">
+      <h3 class="about__h">Innovation &amp; Technology</h3>
+      <ul class="about__list">
+        <li><strong>Patented Technology.</strong> Proprietary solid-state technology designed and patented by Design Engineer Ken Tarlow.</li>
+        <li><strong>Dual Protection.</strong> First-of-its-kind valve combining seismic detection and fire emergency response in one device.</li>
+        <li><strong>Professional Design.</strong> Industrial and visual design by Matt Gross — built to perform and look the part.</li>
+      </ul>
+    </div>
+    <div class="about__col about__col--wide">
+      <h3 class="about__h">Competitive Advantages</h3>
+      <ul class="about__bullets">
+        <li>Dual protection: earthquake AND fire detection in one device</li>
+        <li>Easy installation reduces contractor time and costs</li>
+        <li>Solid-state technology ensures reliability and longevity</li>
+        <li>Patented technology provides market protection</li>
+        <li>Established California contractor network and relationships</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────── §07 START HERE ────────────── -->
+<section class="section section--start" id="start">
+  <header class="section__head section__head--dark">
+    <span class="section__num">§07</span>
+    <h2 class="section__title">Start here.</h2>
+    <p class="section__kicker">Pick your path — protect a home today, or get answers from a human first.</p>
+  </header>
+
+  <div class="start">
+    <article class="start__card">
+      <div class="start__icon">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 4 L42 12 V26 C42 36 34 42 24 44 C14 42 6 36 6 26 V12 Z" fill="none" stroke="#0A1628" stroke-width="2.5"/>
+          <path d="M16 24 L22 30 L33 18" fill="none" stroke="#FF6B1A" stroke-width="3" stroke-linecap="square"/>
+        </svg>
+      </div>
+      <h3>Buy a Valve</h3>
+      <p>Get protection installed in a single home — earthquake + fire shutoff for $235 per unit.</p>
+      <a class="btn btn--primary btn--block" href="mailto:james@californiasmartvalve.com?subject=California%20Smart%20Valve%20%E2%80%94%20Purchase%20Inquiry">
+        <span>Email to Purchase</span><span class="btn__arrow">→</span>
+      </a>
+    </article>
+    <article class="start__card start__card--alt">
+      <div class="start__icon">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="6" y="10" width="36" height="28" rx="2" fill="none" stroke="#F5F1E8" stroke-width="2.5"/>
+          <path d="M6 14 L24 28 L42 14" fill="none" stroke="#FF6B1A" stroke-width="2.5"/>
+        </svg>
+      </div>
+      <h3>Talk to Us</h3>
+      <p>Questions about installation, contractor pricing, or product specs? We'll answer.</p>
+      <a class="btn btn--ghost btn--ghost-light btn--block" href="tel:+17072963600">
+        <span>☏ 707 · 296 · 3600</span>
+      </a>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<!-- ────────────── FOOTER ────────────── -->
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__brand">
+      <svg class="foot__logo" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="10" fill="none" stroke="#FF6B1A" stroke-width="1.5"/>
+        <path d="M10 34 L18 34 L22 22 L28 46 L34 14 L40 50 L46 30 L54 30" fill="none" stroke="#FF6B1A" stroke-width="3"/>
+      </svg>
+      <div>
+        <p class="foot__name">California Smart Valve <em>Inc.</em></p>
+        <p class="foot__tag">Protecting California homes with innovative earthquake and fire safety valve technology.</p>
+      </div>
+    </div>
+    <div class="foot__cols">
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+17072963600">707 · 296 · 3600</a></li>
+          <li><a href="mailto:james@californiasmartvalve.com">james@californiasmartvalve.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#dual">Dual Threat</a></li>
+          <li><a href="#device">The Device</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Station</h5>
+        <ul class="foot__mono">
+          <li>CSV-001</li>
+          <li>36.94°N · 121.65°W</li>
+          <li>MORGAN HILL · CA</li>
+          <li><span class="foot__pulse"></span> SYSTEM NOMINAL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot__rule"></div>
+  <div class="foot__bottom">
+    <span>© <span data-year>2026</span> California Smart Valve Inc. All rights reserved.</span>
+    <span class="foot__mono-tag">END OF TRANSMISSION ▮</span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
