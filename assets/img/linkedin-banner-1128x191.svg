@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1128 191" width="1128" height="191">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1628"/>
+      <stop offset="60%" stop-color="#0E1D33"/>
+      <stop offset="100%" stop-color="#08111F"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B1A" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#FF6B1A" stop-opacity="1"/>
+      <stop offset="88%" stop-color="#FF6B1A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF6B1A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1128" height="191" fill="url(#bg)"/>
+
+  <!-- horizon ticks -->
+  <g stroke="#1E3050" stroke-width="1">
+    <line x1="0" y1="48" x2="1128" y2="48"/>
+    <line x1="0" y1="143" x2="1128" y2="143"/>
+  </g>
+  <g fill="#1E3050" font-family="'Courier New', monospace" font-size="9" letter-spacing="2">
+    <text x="14" y="22">STA: CSV-01</text>
+    <text x="14" y="180">37.131° N · 121.654° W · MORGAN HILL, CA</text>
+    <text x="1114" y="22" text-anchor="end">CH 1 · VEL · 100 SPS</text>
+    <text x="1114" y="180" text-anchor="end">EVT · 6.8 · 1989-10-17</text>
+  </g>
+
+  <!-- seismograph wave -->
+  <g transform="translate(0, 95)">
+    <path d="M 0 0
+             L 60 -2 L 90 3 L 120 -1 L 150 2 L 175 -3
+             L 200 1 L 220 -2 L 240 3 L 255 -2
+             L 270 8 L 282 -22 L 290 38 L 300 -55 L 310 62 L 320 -42 L 332 28 L 345 -10 L 360 4
+             L 390 -2 L 420 1 L 450 -3 L 480 2 L 510 -1
+             L 530 5 L 545 -28 L 555 48 L 565 -68 L 578 70 L 590 -52 L 605 30 L 620 -12 L 640 3
+             L 670 -2 L 700 2 L 730 -1 L 760 3 L 790 -2
+             L 808 6 L 822 -32 L 832 55 L 842 -72 L 855 64 L 870 -45 L 888 26 L 905 -8 L 925 2
+             L 960 -1 L 990 2 L 1020 -3 L 1050 1 L 1080 -2 L 1110 0 L 1128 0"
+          fill="none" stroke="url(#fade)" stroke-width="2.4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- shield mark -->
+  <g transform="translate(38, 56)">
+    <rect width="80" height="80" rx="14" fill="#0A1628" stroke="#FF6B1A" stroke-width="1.5"/>
+    <path d="M11 46 L23 46 L29 30 L37 60 L46 18 L55 64 L63 40 L70 40"
+          fill="none" stroke="#FF6B1A" stroke-width="3.6"
+          stroke-linecap="square" stroke-linejoin="miter"/>
+    <circle cx="70" cy="40" r="3.2" fill="#FF6B1A"/>
+  </g>
+
+  <!-- headline block -->
+  <g transform="translate(140, 70)">
+    <text font-family="'Helvetica Neue', Arial Black, sans-serif"
+          font-weight="900" font-size="26" letter-spacing="2.4"
+          fill="#F4EDE0">PROTECTING CALIFORNIA HOMES</text>
+    <text y="32"
+          font-family="'Helvetica Neue', Arial Black, sans-serif"
+          font-weight="900" font-size="26" letter-spacing="2.4">
+      <tspan fill="#F4EDE0">FROM </tspan>
+      <tspan fill="#FF6B1A">EARTHQUAKES &amp; FIRES</tspan>
+    </text>
+    <text y="58"
+          font-family="'Courier New', monospace"
+          font-size="10" letter-spacing="3" fill="#8FA3BF">
+      DUAL-PROTECTION · SOLID-STATE · PATENTED · MADE IN CALIFORNIA
+    </text>
+  </g>
+
+  <!-- right-edge call sign -->
+  <g transform="translate(1090, 95)" fill="#FF6B1A">
+    <circle r="5"/>
+    <circle r="12" fill="none" stroke="#FF6B1A" stroke-width="1" opacity=".55"/>
+    <circle r="20" fill="none" stroke="#FF6B1A" stroke-width="1" opacity=".25"/>
+  </g>
+</svg>

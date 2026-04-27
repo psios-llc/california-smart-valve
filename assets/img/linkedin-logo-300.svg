@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" rx="46" fill="#0A1628"/>
+  <g transform="translate(0,8)">
+    <path d="M30 168 L66 168 L84 110 L116 226 L150 60 L184 240 L214 148 L252 148"
+          fill="none" stroke="#FF6B1A" stroke-width="14"
+          stroke-linecap="square" stroke-linejoin="miter"/>
+    <circle cx="252" cy="148" r="11" fill="#FF6B1A"/>
+  </g>
+  <text x="150" y="262" text-anchor="middle"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-weight="900" font-size="22" letter-spacing="4"
+        fill="#F4EDE0">CA SMART VALVE</text>
+</svg>
