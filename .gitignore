@@ -3,3 +3,6 @@
 .idea/
 .vscode/
 node_modules/
+
+# Source documents — confidential, never publish
+raw/
