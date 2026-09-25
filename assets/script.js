@@ -2,8 +2,23 @@
    California Smart Valve — seismograph + station hooks
    ───────────────────────────────────────────────── */
 
+// ── Stripe Payment Link ──────────────────────────
+// Paste the Payment Link from the Stripe Dashboard (Payment Links → CSV-V1).
+// Leave empty and every Buy button falls back to the purchase-inquiry email.
+const STRIPE_PAYMENT_LINK = '';
+
 (function () {
   'use strict';
+
+  // ── buy buttons → Stripe ────────────────────────
+  if (STRIPE_PAYMENT_LINK) {
+    document.querySelectorAll('.js-buy').forEach(function (a) {
+      a.href = STRIPE_PAYMENT_LINK;
+      a.removeAttribute('target');
+      const label = a.querySelector('span');
+      if (label && a.dataset.buyLabel) label.textContent = a.dataset.buyLabel;
+    });
+  }
 
   // ── seismograph path generator ──────────────────
   function buildSeismoPath() {

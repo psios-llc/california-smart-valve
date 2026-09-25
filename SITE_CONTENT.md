@@ -28,7 +28,7 @@ Home · About · Leadership · Products · Start Here
 - **Body:** California Smart Valve Inc. delivers cutting-edge earthquake and fire safety valve technology to protect homes and save lives across California.
 - **CTA 1:** Learn About Our Products
 - **CTA 2 (was "Investment Opportunity"):** _remove_ — replace with a secondary like "See How It Works" or drop entirely.
-- **Hero price card:** $235 Retail Price
+- **Hero price card:** $285 Retail Price (includes tax and shipping)
 
 ---
 
@@ -107,9 +107,9 @@ A California corporation dedicated to protecting homes and saving lives through 
 - **Easy Installation** — Simple installation process for professional contractors.
 
 ### Product Pricing
-- **$235 Retail Price**
+- **$285 Retail Price** (includes tax and shipping)
 - Professional installation recommended for optimal performance and warranty coverage.
-- CTA: **Email to Purchase — $235**
+- CTA: **Email to Purchase — $285**
 - Phone: **707-296-3600**
 
 ### Competitive Analysis

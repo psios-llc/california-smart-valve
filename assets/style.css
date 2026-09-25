@@ -1373,3 +1373,16 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   .station, .nav, .seismo, .hero__noise { display: none; }
   body { background: white; color: black; }
 }
+
+/* ── purchase alternates + order confirmation ── */
+.price__alt { margin: 14px 0 0; font-family: var(--mono); font-size: 12px; line-height: 1.7; opacity: .85; }
+.price__alt a { color: var(--orange); text-decoration: none; border-bottom: 1px solid currentColor; }
+.price__alt .price__phone { display: inline; margin: 0; }
+.confirm { min-height: 70vh; display: grid; place-items: center; padding: clamp(56px,10vh,120px) var(--pad); background: var(--navy); color: var(--bone); }
+.confirm__card { max-width: 640px; width: 100%; padding: clamp(28px,4vw,48px); border: 1px solid var(--rule); background: var(--navy-2); }
+.confirm__num { font-family: var(--mono); font-size: 12px; letter-spacing: .18em; color: var(--pulse); }
+.confirm h1 { font-family: var(--display); font-weight: 900; font-size: clamp(40px,6vw,72px); line-height: .95; margin: 14px 0 18px; text-transform: uppercase; }
+.confirm p { font-family: var(--serif); font-size: 17px; line-height: 1.6; margin: 0 0 14px; opacity: .92; }
+.confirm ol { margin: 18px 0 26px; padding-left: 22px; font-family: var(--serif); line-height: 1.6; }
+.confirm ol li { margin-bottom: 8px; }
+.confirm .btn { margin-top: 8px; }
