@@ -5,7 +5,7 @@
 // ── Stripe Payment Link ──────────────────────────
 // Paste the Payment Link from the Stripe Dashboard (Payment Links → CSV-V1).
 // Leave empty and every Buy button falls back to the purchase-inquiry email.
-const STRIPE_PAYMENT_LINK = '';
+const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/9B628qbg75y11ITdtw3Ru01';
 
 (function () {
   'use strict';
