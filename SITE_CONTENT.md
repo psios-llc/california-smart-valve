@@ -109,7 +109,7 @@ A California corporation dedicated to protecting homes and saving lives through 
 ### Product Pricing
 - **$285 Retail Price** (includes tax and shipping)
 - Professional installation recommended for optimal performance and warranty coverage.
-- CTA: **Email to Purchase — $285**
+- CTA: **Pre-Order — $285** (Stripe payment link; units not shipping yet)
 - Phone: **707-296-3600**
 
 ### Competitive Analysis
