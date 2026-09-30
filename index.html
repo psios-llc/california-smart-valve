@@ -36,14 +36,17 @@
 
 <!-- ────────────── NAV ────────────── -->
 <nav class="nav" aria-label="Primary">
-  <a class="nav__brand" href="#top">
-    <svg class="nav__logo" viewBox="0 0 64 64" aria-hidden="true">
-      <rect width="64" height="64" rx="10" fill="#0A1628"/>
-      <path d="M10 34 L18 34 L22 22 L28 46 L34 14 L40 50 L46 30 L54 30" fill="none" stroke="#FF6B1A" stroke-width="3.2" stroke-linecap="square"/>
-      <circle cx="54" cy="30" r="2.6" fill="#FF6B1A"/>
-    </svg>
-    <span class="nav__brand-text">California Smart Valve <em>Inc.</em></span>
-  </a>
+  <div class="nav__left">
+    <a class="nav__brand" href="#top">
+      <svg class="nav__logo" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="10" fill="#0A1628"/>
+        <path d="M10 34 L18 34 L22 22 L28 46 L34 14 L40 50 L46 30 L54 30" fill="none" stroke="#FF6B1A" stroke-width="3.2" stroke-linecap="square"/>
+        <circle cx="54" cy="30" r="2.6" fill="#FF6B1A"/>
+      </svg>
+      <span class="nav__brand-text">California Smart Valve <em>Inc.</em></span>
+    </a>
+    <a class="nav__preorder js-buy" href="mailto:james@californiasmartvalve.com?subject=California%20Smart%20Valve%20%E2%80%94%20Pre-Order" data-buy-label="Pre-Order &rarr;"><span>Pre-Order &rarr;</span></a>
+  </div>
   <button class="nav__toggle" aria-label="Open navigation" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
